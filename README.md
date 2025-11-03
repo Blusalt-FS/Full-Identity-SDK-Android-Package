@@ -24,15 +24,35 @@ android{
 }
 
 repositories {
-  maven {
-    name "GitHubPackages"
-    url 'https://maven.pkg.github.com/Blusalt-FS/Blusalt_Document_Verification-Android-Package'
+        maven {
+            name "GitHubPackages"
+            url 'https://maven.pkg.github.com/Blusalt-FS/Liveness-Only-Android-Package'
 
-    credentials {
-      username githubProperties['USERNAME_GITHUB']
-      password githubProperties['TOKEN_GITHUB']
-    }
-  }
+            credentials {
+                username githubProperties['USERNAME_GITHUB']
+                password githubProperties['TOKEN_GITHUB']
+            }
+        }
+
+        maven {
+            name "GitHubPackages"
+            url 'https://maven.pkg.github.com/Blusalt-FS/Blusalt_Document_Verification-Android-Package'
+
+            credentials {
+                username githubProperties['USERNAME_GITHUB']
+                password githubProperties['TOKEN_GITHUB']
+            }
+        }
+
+        maven {
+            name "GitHubPackages"
+            url 'https://maven.pkg.github.com/Blusalt-FS/Full-Identity-SDK-Android-Package'
+
+            credentials {
+                username githubProperties['USERNAME_GITHUB']
+                password githubProperties['TOKEN_GITHUB']
+            }
+        }
 }
 
 dependencies{
